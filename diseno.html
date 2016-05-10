@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diseno</title>
+	<link rel="stylesheet" href="diseno.css">
+	<script type="text/javascript" src="calendar.js"></script>
+	<script type="text/javascript">
+	window.onload = function(){
+		var cal = new Calendar();
+	    cal.generateHTML();
+	    document.getElementById("calendar").innerHTML = cal.getHTML();
+	    //test();
+	}
+	</script>
+</head>
+<body>
+	<div class="row">
+		<section class="sidemenu">
+			<ul class="main_menu">
+				<li><a href="#"><img src="icono_4.png"><img class="front_img" src="icono_2.png"><span>Calendario</span></a></li>
+				<li><a href="#"><img src="icono_4.png"><img class="front_img" src="icono_2.png"><span>Libros</span></a></li>
+				<li><a href="#"><img src="icono_4.png"><img class="front_img" src="icono_2.png"><span>Categor&#237;as</span></a></li>
+				<li><a href="#"><img src="icono_4.png"><img class="front_img" src="icono_2.png"><span>Pr&#233;stamos</span></a></li>
+				<li><a href="#"><img src="icono_4.png"><img class="front_img" src="icono_2.png"><span>Clientes</span></a></li>
+				<li><a href="#"><img src="icono_4.png"><img class="front_img" src="icono_2.png"><span>Control de Usuarios</span></a></li>
+			</ul>
+		</section><!--
+		--><section class="operations">
+			<header>				
+				<img src="tree_1.jpg" class="img_left">
+				<div class="titulo">TITULO</div>
+				<img src="tree_1.jpg" class="img_right">
+			</header>
+			<section class="calendar_father">
+				<div id="calendar" class="calendar_container"></div>
+				<div id="calendar_menu" class="calendar_menu">
+					<form class="calendar_form">
+						<input type="button" value="Anterior" onClick="changeMonthDirection(0)">
+						<input type="button" value="Siguiente" onClick="changeMonthDirection(1)">
+					</form>
+				</div>
+			</section>
+		</section>
+	</div>	
+</body>
+</html>
