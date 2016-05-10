@@ -1,0 +1,224 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+/*
+--------------CUSTOM STYLES
+*/
+body{
+	font: 300 16px/22px "Helvetica Neue", Arial;	
+}
+
+/*
+--------------BASE GRID
+*/
+.row{
+	background: #eee;
+	width: 100%;
+	height: 100vh;	
+}
+
+.sidemenu{
+	display: inline-block;
+	background-color: #5c755e;
+	color: white;	
+	width: 25%;
+	vertical-align: top;
+	height: 100%;
+	/*vertical-align: top;*/
+}
+
+.operations{
+	display: inline-block;
+	background-color: #a97d5d;
+	color: white;	
+	width: 75%;
+	vertical-align: top;
+	height: 100%;
+	/*width: calc(75% - 1px);*/
+}
+
+/*
+---------------MAIN MENU
+*/
+.main_menu{
+
+	top: 50%;	
+	transform: translateY(-50%);
+	position: relative;
+}
+
+.main_menu li{
+	transition: background-color 0.5s ease;
+}
+
+.main_menu li img{
+	vertical-align: middle;
+	position: absolute;
+	left: 0;
+	transition: opacity 0.5s ease;	
+}
+
+.main_menu li span{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 50px;
+}
+
+.main_menu li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: white;	
+}
+
+.main_menu li:hover{
+	background-color: #7e9a81;
+}
+
+.main_menu li:hover .front_img{
+	opacity: 0;
+}
+
+/*
+---------------HEADER
+*/
+
+header{
+	border-width: 0 100px;
+	border-style: solid;
+	border-color: transparent;
+	width: 80%;	
+	overflow: hidden;
+}
+
+
+header img{
+	width: 125px;
+	border-radius: 50% 15px;
+}
+
+.img_left{
+	float: left;
+}
+
+.img_right{
+	float: right;
+}
+
+.titulo{
+	float: left;
+	border-width: 0 220px;
+	border-style: solid;
+	border-color: transparent;
+	padding-top: 50px;
+}
+
+/*
+-------------CALENDARIO
+*/
+.calendar_father{
+	overflow: auto;
+	height: 540px;
+}
+
+.calendar_container{
+	float: left;
+	width: 80%;
+	height: 100%;
+}
+
+.calendar_menu{
+	float: left;
+	width: 20%;
+	height: 100%
+}
+
+.calendar{
+	font:2em Comic Sans, Comic Sans MS, cursive;
+	width: 92%;
+	border-collapse: separate;
+	border-spacing: 5px 10px;
+	padding-left: 60px;
+	padding-top: 40px;
+}
+
+.calendar th{
+	background-color: #5c755e;
+	border-radius: 20px 20px 20px 20px;
+	text-align: center;
+}
+
+.calendar_header{
+	background-color: #5c755e;
+	border-radius: 20px 20px 20px 20px;
+	text-align: center;
+	border-collapse: separate; 
+}
+
+.calendar_header_day{
+	border-radius: 20px 20px 20px 20px;
+}
+
+.calendar_day{
+	text-align: center;
+	background-color: #7e9a81;
+}
+
+.calendar_today{
+	text-align: center;
+	background-color: #9ACD32;
+}
+
+.calendar_form{
+	padding-top: 60px;
+}
+
+.fucking_line_black{
+	border: 1px solid black;
+	padding-top: 0;
+	padding-left: 200px;
+	background-color: #6B8E23;
+}
