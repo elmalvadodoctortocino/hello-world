@@ -1,2 +1,2 @@
 # hello-world
-INITIALIZE
+Hello world classic
